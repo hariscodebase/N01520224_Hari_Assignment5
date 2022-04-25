@@ -1,0 +1,26 @@
+﻿@model N01520224_Hari_Assignment5.Models.Teacher
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Teacher</h2>
+
+<form method="POST" action="/Teacher/Update/@Model.Id">
+    <div>
+        <label>First name: </label>
+        <input type="text" name="teacherfname" value="@Model.FName"/>
+    </div>
+    <div>
+        <label>Last name: </label>
+        <input type="text" name="teacherlname" value="@Model.LName"/>
+    </div>
+    <div>
+        <label>Salary: </label>
+        <input type="text" name="teachersalary" value="@Model.Salary"/>
+    </div>
+    <div>
+        <input type="submit" value="Save Changes" />
+    </div>
+</form>
+
+

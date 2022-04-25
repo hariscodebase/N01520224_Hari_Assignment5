@@ -1,0 +1,22 @@
+﻿@model N01520224_Hari_Assignment5.Models.Teacher
+
+@{
+    ViewBag.Title = "Show";
+}
+
+
+
+<div id="containershow">
+    <h2>Teacher Details</h2>
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back To Teachers</a>
+        <br />
+        <a class="navlink" href="/Teacher/Edit/@Model.Id">Edit this Teacher</a>
+        <br />
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.Id">Delete this Teacher</a>
+    </nav>
+    <div>Full Name: @Model.FName @Model.LName</div>
+    <div>Salary: @Model.Salary</div>
+</div>
+
+
